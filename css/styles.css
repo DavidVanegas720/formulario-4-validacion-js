@@ -2,7 +2,7 @@ body {
     background: url(../images/fond.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
-    background-attachment: cover;
+    background-attachment: fixed;
     font-family: monospace;
 }
 
@@ -85,10 +85,17 @@ body {
 }
 
 
-@media screen and (max-width: 800px) {
+
+    /* ---------media queries------ */
+
+@media screen and (max-width: 760px) {
+
+    body {
+        background-size: 100% 100%;
+    }
 
     .container-form {
-        width: 400px;
+        max-width: 50vh;
         min-width: 300px;
     }
 
